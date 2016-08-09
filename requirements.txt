@@ -1,0 +1,14 @@
+setuptools
+#pypiwin32
+#https://pypi.python.org/pypi/pypiwin32
+#twisted
+#https://pypi.python.org/pypi/Twisted/15.4.0
+#lxml
+#https://pypi.python.org/pypi/lxml/3.4.4
+
+scrapy
+
+pymongo
+#json
+#base64
+requests
