@@ -4,14 +4,22 @@ import base64
 import requests
 
 """
-输入你的微博账号和密码，可去淘宝买，一元七个。
+在username_pwd.py.example文件中按对应的格式填入你的用户名
+和密码，并把example后缀去掉.
+
+微博账号可去淘宝买，一元七个。
 建议买几十个，微博限制的严，太频繁了会出现302转移。
 或者你也可以把时间间隔调大点。
 """
-myWeiBo = [
-    {'no': 'jiadieyuso3319@163.com', 'psw': 'a123456'},
-    {'no': 'shudieful3618@163.com', 'psw': 'a123456'},
-]
+myWeiBo = []
+
+try:
+    from username_pwd import myWeiBo
+except:
+    myWeiBo = [
+        {'no': 'jiadieyuso3319@163.com', 'psw': 'a123456'},
+        {'no': 'shudieful3618@163.com', 'psw': 'a123456'},
+    ]
 
 
 def getCookies(weibo):
